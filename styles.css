@@ -1,0 +1,99 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* FORM SECTION */
+form {
+    border: 1px solid black;
+    background-color: #eaf4f4;
+    width: 60%;
+    padding: 2rem;
+    margin: 3rem auto;
+
+    display: flex;
+    flex-direction: column;
+}
+
+form input, textarea {
+    width: 50%;
+    margin-bottom: 1rem;
+    padding: 0.7rem;
+    border: 2px solid gray;
+}
+
+form label {
+    margin-bottom: 0.4rem;
+    font-weight: 600;
+}
+
+form input:focus, form textarea:focus {
+    border: none;
+    outline: 2px solid royalblue;
+    box-shadow: 1px 1px 8px 1px royalblue;
+}
+
+.maximum-char-styles:focus {
+    outline: 2px solid red;
+    box-shadow: 1px 1px 8px 1px royalblue;
+}
+
+.buttons {
+    margin-top: 2rem;
+    display: flex;
+    gap: 0.7rem;
+}
+
+.buttons button {
+    padding: 0.6rem 0.9rem;
+    font-size: 1rem;
+    border-radius: 0.4rem;
+    border: none;
+    cursor: pointer;
+
+    background: #14213d;
+    color: #fff;
+}
+
+.buttons button + button {
+    color: #fff;
+    background: royalblue;
+}
+
+
+/* DISPLAY COMMENT SECTION */
+.display-info {
+    border: 1px solid #03045e;
+    width: 60%;
+    margin: 6rem auto;
+    padding: 3rem;
+}
+
+.display-info * {
+    padding-bottom: 0.3rem;
+}
+
+.email {
+    font-style: italic;
+}
+
+.display-info p + p + p {
+    margin: 2rem 0;
+}
+
+/* MEDIA QUERIES */
+/* MOBILE PHONES */
+@media (max-width: 420px) {
+    form, .display-info {
+        width: 90%;
+        padding: 1rem;
+    }
+    form input, textarea {
+        width: 80%;
+    }
+}
